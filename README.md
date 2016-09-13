@@ -9,6 +9,7 @@ This is a javascript plugin that uses ajax to take a file that the user wants to
 4. When you want to move a file call function sendFile(pathToStatusServerScript, fileId, callBackFunction)
 5. Set where you want the file to move to in ajaxSendFile.php. Also change the echo location to point to the folder it is being sent to.
 
+
 *sendFile() Param*
 
 pathToStatusServerScript: Path to ajaxSendFile.php in your file.
@@ -17,7 +18,9 @@ fileId: The id of the file input
 
 callBackFunction: Optional callback to hangle the data
 
+
 *Callback data returned:*
+
 
 0: error
 
