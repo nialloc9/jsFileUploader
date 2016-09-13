@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta property="og:image" content="images/logo.png" />
+
+    <!-- TITLE -->
+    <title>ajaxSendFile</title>
+
+    <!-- CSS CUSTOM-->
+    <link rel="stylesheet" href="public/css/index.css">
+
+    <!-- LIB -->
+    <script type="text/javascript" src="public/js/lib/jquery.lib.js"></script>
+
+    <!-- JA UTILITIES -->
+    <script src="public/js/utilities/ajaxSendFile.utilities.js"></script>
+
+    <!-- JS - CUSTOM -->
+    <script src="public/js/index.js"></script>
+</head>
+<body>
+
+    <div class="main-body">
+        <div class="image-wrapper">
+            <img class="image" id="image" src="res/images/default.jpg"/>
+        </div> <!-- image-wrapper -->
+
+        <form enctype="multipart/form-data" method="post">
+            <input type="file" name="imageFile" id="imageFile">
+            <button type="submit" id="imageChangeBtn">Change</button>
+        </form>
+    </div> <!-- main-body -->
+</body>
+</html>
