@@ -7,7 +7,7 @@ $(document).ready(function(){
 
         e.preventDefault();
         console.log('Image change button clicked.. ');
-        sendFile('php/ajaxSendFile.php', 'imageFile', 'image', fileSendDataHandler);
+        sendFile('php/ajaxSendFile.php', 'imageFile', fileSendDataHandler);
 
     });
 
@@ -30,7 +30,7 @@ function fileSendDataHandler(data, jImageAreaId){
         //else do this
         default:
             console.log("SUCCESS: Adding image to screen");
-            $(jImageAreaId).attr('src', data); //add image to image area
+            $('#image').attr('src', data); //add image to image area
             break;
     } //switch
 }

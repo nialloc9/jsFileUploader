@@ -2,11 +2,10 @@
  * Created by Niall on 13/09/2016.
  */
 //UPDATE STATUS
-function sendFile(pathToStatusServerScript, fileId, imageDisplayAreaId, callBackFunction) {
+function sendFile(pathToStatusServerScript, fileId, callBackFunction) {
 
     //get element id's for jQuery
     var jFileId = '#' + fileId;
-    var jImageAreaId = '#' + imageDisplayAreaId;
 
     //get element values
     var file = $(jFileId).prop('files')[0];
@@ -30,7 +29,7 @@ function sendFile(pathToStatusServerScript, fileId, imageDisplayAreaId, callBack
 
                 //DO SOME AWESOME STUFF HERE..
                 if (callBackFunction != '') {
-                    callBackFunction(data, jImageAreaId);
+                    callBackFunction(data);
                 } //callback check
 
             } //success
