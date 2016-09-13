@@ -26,7 +26,7 @@ callBackFunction: Optional callback to hangle the data
 
 2: server did not receive a file
 
-If neither 0 or 2 then it will return the location the file was returned to.
+If neither 0 or 2 then it will return the location the file was moved to.
 
 
 #Example:
